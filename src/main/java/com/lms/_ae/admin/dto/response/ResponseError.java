@@ -1,4 +1,4 @@
-package com.lms._ae.dto.response;
+package com.lms._ae.admin.dto.response;
 
 
 public class ResponseError extends ResponseData{

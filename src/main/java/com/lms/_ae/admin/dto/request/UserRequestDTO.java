@@ -1,6 +1,8 @@
-package com.lms._ae.dto.request;
+package com.lms._ae.admin.dto.request;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.NotNull;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
@@ -20,6 +22,8 @@ public class UserRequestDTO {
     private String phone;
 
     @NotNull(message = "dob must be not null")
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+    @JsonFormat(pattern = "MM/dd/yyyy")
     private Date dateOfBirth;
 
     @NotNull(message = "gender must be not null")
@@ -34,18 +38,14 @@ public class UserRequestDTO {
     @NotNull(message = "status must be not null")
     private String status;
 
-    public UserRequestDTO(int id, String firstName, String lastName, String email, String phone, Date dateOfBirth, String gender, String username, String password, String status) {
+    public UserRequestDTO(int id, String firstName, String lastName, String email, String phone) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.phone = phone;
-        this.dateOfBirth = dateOfBirth;
-        this.gender = gender;
-        this.username = username;
-        this.password = password;
-        this.status = status;
     }
+
     public UserRequestDTO(){}
 
     public int getId() {
