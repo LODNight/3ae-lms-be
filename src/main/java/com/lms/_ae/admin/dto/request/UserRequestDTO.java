@@ -1,4 +1,4 @@
-package com.lms._ae.dto.request;
+package com.lms._ae.admin.dto.request;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.NotNull;
