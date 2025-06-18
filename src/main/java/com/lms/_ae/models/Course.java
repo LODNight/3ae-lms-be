@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @Entity
 @Table(name = "course")
@@ -21,6 +22,8 @@ public class Course {
 
     private String fieldId;
 
+    private String description;
+
     private String createdBy;
 
     private String updatedBy;
@@ -28,5 +31,6 @@ public class Course {
     private LocalDateTime createdAt;
 
     private LocalDateTime updatedAt;
+
 
 }
