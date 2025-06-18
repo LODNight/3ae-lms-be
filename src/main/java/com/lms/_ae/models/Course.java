@@ -18,12 +18,15 @@ public class Course {
     private String shortName;
 
     private String courseName;
-//    Coding, art,robotics
+
     private String fieldId;
 
     private String createdBy;
+
     private String updatedBy;
+
     private LocalDateTime createdAt;
+
     private LocalDateTime updatedAt;
 
 }
