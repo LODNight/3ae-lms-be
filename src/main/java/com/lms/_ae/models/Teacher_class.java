@@ -6,20 +6,21 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "studentGuardian")
+@Table(name = "teacher_class")
 @Data
-public class student_guardian {
+public class Teacher_class {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    private String studentId;
-    private String guardianId;
-    private String guardianType_Id;
+    private String teacherId;
+    private String classId;
+    private String teachingTypeId;
 
     private String createdBy;
     private String updatedBy;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
+
 }
