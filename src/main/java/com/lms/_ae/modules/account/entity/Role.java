@@ -4,24 +4,17 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDateTime;
-
 @Entity
-@Table(name = "accounts")
+@Table(name = "roles")
 @Data
-public class Account {
+public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    private String username;
-
-    private String password;
+    private String name;
 
     private String status;
-
-    @ManyToOne
-    @JoinColumn(name = "profile_id")
-    private Profile profile;
 
     private String createdBy;
 

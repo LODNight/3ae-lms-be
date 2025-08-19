@@ -1,27 +1,21 @@
 package com.lms._ae.modules.account.entity;
 
+
 import jakarta.persistence.*;
 import lombok.Data;
+import org.springframework.context.annotation.Primary;
 
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "accounts")
+@Table(name = "permissons")
 @Data
-public class Account {
+public class Permission {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private int id;
 
-    private String username;
-
-    private String password;
-
-    private String status;
-
-    @ManyToOne
-    @JoinColumn(name = "profile_id")
-    private Profile profile;
+    private String name;
 
     private String createdBy;
 
