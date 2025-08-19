@@ -1,6 +1,6 @@
 package com.lms._ae.service;
 
-import com.lms._ae.models.Profile;
+import com.lms._ae.modules.account.entity.Profile;
 
 import java.util.List;
 

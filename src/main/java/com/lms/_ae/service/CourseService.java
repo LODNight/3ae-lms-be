@@ -1,8 +1,6 @@
 package com.lms._ae.service;
 
-import com.lms._ae.models.Course;
-import com.lms._ae.repository.CourseRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.lms._ae.modules.course.entity.Course;
 
 import java.util.List;
 

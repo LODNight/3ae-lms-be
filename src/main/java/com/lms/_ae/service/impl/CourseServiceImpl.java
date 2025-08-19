@@ -1,13 +1,12 @@
 package com.lms._ae.service.impl;
 
-import com.lms._ae.models.Course;
-import com.lms._ae.repository.CourseRepository;
+import com.lms._ae.modules.course.entity.Course;
+import com.lms._ae.modules.course.repository.CourseRepository;
 import com.lms._ae.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 
 @Service

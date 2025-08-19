@@ -1,7 +1,7 @@
 package com.lms._ae.service.impl;
 
-import com.lms._ae.models.Profile;
-import com.lms._ae.repository.ProfileRepository;
+import com.lms._ae.modules.account.entity.Profile;
+import com.lms._ae.modules.account.repository.ProfileRepository;
 import com.lms._ae.service.ProfileService;
 import org.springframework.beans.factory.annotation.Autowired;
 
