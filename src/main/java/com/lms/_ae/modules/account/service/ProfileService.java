@@ -1,4 +1,4 @@
-package com.lms._ae.service;
+package com.lms._ae.modules.account.service;
 
 import com.lms._ae.modules.account.entity.Profile;
 

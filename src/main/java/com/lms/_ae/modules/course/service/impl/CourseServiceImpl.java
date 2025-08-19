@@ -1,8 +1,8 @@
-package com.lms._ae.service.impl;
+package com.lms._ae.modules.course.service.impl;
 
 import com.lms._ae.modules.course.entity.Course;
 import com.lms._ae.modules.course.repository.CourseRepository;
-import com.lms._ae.service.CourseService;
+import com.lms._ae.modules.course.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
