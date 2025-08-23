@@ -6,13 +6,13 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "base")
+@Table(name = "bases")
 @Data
 public class Base {
 
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
 

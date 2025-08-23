@@ -3,17 +3,27 @@ package com.lms._ae.modules.account.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.time.LocalDateTime;
+
 
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 @Data
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String user_name;
 
     private String email;
+
+    private String createdBy;
+
+    private String updatedBy;
+
+    private LocalDateTime createdAt;
+
+    private LocalDateTime updatedAt;
 }

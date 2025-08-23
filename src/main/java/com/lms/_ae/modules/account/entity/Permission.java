@@ -8,11 +8,11 @@ import org.springframework.context.annotation.Primary;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "permissons")
+@Table(name = "permissions")
 @Data
 public class Permission {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private String name;

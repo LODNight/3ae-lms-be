@@ -7,13 +7,13 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
-@Table(name = "class")
+@Table(name = "classes")
 @Entity
 @Data
 public class Class {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String shortName;

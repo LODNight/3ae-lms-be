@@ -6,12 +6,12 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "teachingType")
+@Table(name = "teaching_types")
 @Data
 public class TeachingType {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String teachingType;

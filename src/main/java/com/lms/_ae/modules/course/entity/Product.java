@@ -7,12 +7,12 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "product")
+@Table(name = "products")
 @Data
 public class Product {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String productShortName;

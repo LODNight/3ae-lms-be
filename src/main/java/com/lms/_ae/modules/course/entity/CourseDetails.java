@@ -7,11 +7,11 @@ import java.time.LocalDateTime;
 
 @Data
 @Entity
-@Table(name = "courseDetails")
+@Table(name = "course_details")
 public class CourseDetails {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String courseId;

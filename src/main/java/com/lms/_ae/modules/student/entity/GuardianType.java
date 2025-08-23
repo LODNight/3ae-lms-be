@@ -7,11 +7,11 @@ import java.time.LocalDateTime;
 
 @Entity
 @Data
-@Table(name = "guardianType")
+@Table(name = "guardian_types")
 public class GuardianType {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String name;

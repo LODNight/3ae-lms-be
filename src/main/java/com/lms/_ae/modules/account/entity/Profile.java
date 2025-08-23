@@ -12,7 +12,7 @@ import java.util.List;
 public class Profile {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String first_name;
