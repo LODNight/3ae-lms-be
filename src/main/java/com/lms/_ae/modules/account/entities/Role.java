@@ -1,23 +1,20 @@
-package com.lms._ae.modules.account.entity;
+package com.lms._ae.modules.account.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDateTime;
-
-
 @Entity
-@Table(name = "users")
+@Table(name = "roles")
 @Data
-public class User {
-
+public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String user_name;
+    private String name;
 
-    private String email;
+    private String status;
 
     private String createdBy;
 

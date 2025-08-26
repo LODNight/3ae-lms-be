@@ -1,17 +1,18 @@
-package com.lms._ae.modules.account.entity;
+package com.lms._ae.modules.account.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
-@Table(name = "account_roles")
+@Table(name = "account_profiles")
 @Data
-public class AccountRole {
+public class UserAccount {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private int accountId;
 
-    private int roleId;
+    private int profileId;
+
 }

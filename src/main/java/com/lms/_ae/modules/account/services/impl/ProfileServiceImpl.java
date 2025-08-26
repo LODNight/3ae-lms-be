@@ -1,8 +1,8 @@
-package com.lms._ae.modules.account.service.impl;
+package com.lms._ae.modules.account.services.impl;
 
-import com.lms._ae.modules.account.entity.Profile;
-import com.lms._ae.modules.account.repository.ProfileRepository;
-import com.lms._ae.modules.account.service.ProfileService;
+import com.lms._ae.modules.account.entities.Profile;
+import com.lms._ae.modules.account.repositories.ProfileRepository;
+import com.lms._ae.modules.account.services.ProfileService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.time.LocalDateTime;

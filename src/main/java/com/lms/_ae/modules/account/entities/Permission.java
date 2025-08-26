@@ -1,9 +1,8 @@
-package com.lms._ae.modules.account.entity;
+package com.lms._ae.modules.account.entities;
 
 
 import jakarta.persistence.*;
 import lombok.Data;
-import org.springframework.context.annotation.Primary;
 
 import java.time.LocalDateTime;
 

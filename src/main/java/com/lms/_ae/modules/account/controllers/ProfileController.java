@@ -1,4 +1,4 @@
-package com.lms._ae.modules.account.controller;
+package com.lms._ae.modules.account.controllers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

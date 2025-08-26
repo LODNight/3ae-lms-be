@@ -1,6 +1,6 @@
-package com.lms._ae.modules.account.service;
+package com.lms._ae.modules.account.services;
 
-import com.lms._ae.modules.account.entity.User;
+import com.lms._ae.modules.account.entities.User;
 
 import java.util.List;
 
