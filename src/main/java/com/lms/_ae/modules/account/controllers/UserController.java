@@ -5,8 +5,11 @@ import com.lms._ae.modules.account.entities.User;
 import com.lms._ae.modules.account.mappers.UserMapper;
 import com.lms._ae.modules.account.repositories.UserRepository;
 import lombok.AllArgsConstructor;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Set;
 
 @RestController
 @AllArgsConstructor // Lombok tự sinh contructor
@@ -16,8 +19,13 @@ public class UserController {
     private final UserMapper userMapper;
 
     @GetMapping
-    public Iterable<UserDto> getAllUser(){
-        return userRepository.findAll()
+    public Iterable<UserDto> getAllUser(
+            @RequestParam(required = false, defaultValue = "", name = "sort") String sortBy
+    ){
+        if(!Set.of("name","email").contains(sortBy))
+            sortBy = "name";
+
+        return userRepository.findAll(Sort.by(sortBy))
                 .stream()
                 .map(userMapper::toDto)
                 .toList();
