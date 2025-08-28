@@ -3,12 +3,17 @@ package com.lms._ae.modules.course.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "courses")
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+
 public class Course {
 
     @Id

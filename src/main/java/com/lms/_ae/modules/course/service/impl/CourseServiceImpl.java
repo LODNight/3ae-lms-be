@@ -41,8 +41,6 @@ public class CourseServiceImpl implements CourseService {
             existing.setDescription(course.getDescription());
 
             // Created and Updated
-            existing.setCreatedBy(course.getCreatedBy() == null ? existing.getCreatedBy() : course.getCreatedBy());
-            existing.setCreatedAt(course.getCreatedAt() == null ? existing.getCreatedAt() : course.getCreatedAt());
             existing.setUpdatedAt(LocalDateTime.now());
             existing.setUpdatedBy(course.getUpdatedBy());
 
