@@ -9,10 +9,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "courses")
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
+@Data
 
 public class Course {
 
