@@ -1,4 +1,4 @@
-package com.lms._ae.modules.teacher.entity;
+package com.lms._ae.modules.student.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -6,15 +6,16 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "teaching_types")
 @Data
-public class TeachingType {
+@Table(name = "guardian_types")
+public class GuardianType {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String teachingType;
+    private String name;
+
     private String createdBy;
     private String updatedBy;
     private LocalDateTime createdAt;

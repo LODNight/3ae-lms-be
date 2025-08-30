@@ -1,6 +1,6 @@
-package com.lms._ae.modules.course.repository;
+package com.lms._ae.modules.course.repositories;
 
-import com.lms._ae.modules.course.entity.Course;
+import com.lms._ae.modules.course.entities.Course;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CourseRepository extends JpaRepository<Course, Integer> {

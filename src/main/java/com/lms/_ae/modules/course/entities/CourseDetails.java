@@ -1,24 +1,23 @@
-package com.lms._ae.modules.student.entity;
+package com.lms._ae.modules.course.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
-@Entity
-@Table(name = "enrolls")
 @Data
-public class Enroll {
+@Entity
+@Table(name = "course_details")
+public class CourseDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String studentId;
-    private String classId;
-    private String admissionDate;
 
-    private String description;
-    private String status;
+    private String courseId;
+    private String levelId;
+    private String name;
+    private String shortName;
 
     private String createdBy;
     private String updatedBy;

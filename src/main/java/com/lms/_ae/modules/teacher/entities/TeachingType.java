@@ -1,37 +1,22 @@
-package com.lms._ae.modules.course.entity;
-
+package com.lms._ae.modules.teacher.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.*;
 
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "courses")
+@Table(name = "teaching_types")
 @Data
-
-public class Course {
+public class TeachingType {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String shortName;
-
-    private String courseName;
-
-    private String fieldId;
-
-    private String description;
-
+    private String teachingType;
     private String createdBy;
-
     private String updatedBy;
-
     private LocalDateTime createdAt;
-
     private LocalDateTime updatedAt;
-
-
 }

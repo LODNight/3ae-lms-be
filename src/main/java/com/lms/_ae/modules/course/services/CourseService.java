@@ -1,7 +1,7 @@
-package com.lms._ae.modules.course.service;
+package com.lms._ae.modules.course.services;
 
 
-import com.lms._ae.modules.course.entity.Course;
+import com.lms._ae.modules.course.entities.Course;
 
 import java.util.List;
 

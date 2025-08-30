@@ -1,28 +1,27 @@
-package com.lms._ae.modules.teacher.entity;
+package com.lms._ae.modules.student.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
-@Data
-@Table(name = "teachers")
 @Entity
-public class Teacher {
+@Table(name = "enrolls")
+@Data
+public class Enroll {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    private String studentId;
+    private String classId;
+    private String admissionDate;
 
-    private String fullName;
-    private String lastName;
-    private String gender;
-    private String DoB;
-//    Maybe need can handle subject list
+    private String description;
+    private String status;
 
     private String createdBy;
     private String updatedBy;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
-
 }
