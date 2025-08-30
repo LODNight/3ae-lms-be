@@ -12,7 +12,7 @@ public class Guardian {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
     private String parentFirstName;
     private String parentLastName;

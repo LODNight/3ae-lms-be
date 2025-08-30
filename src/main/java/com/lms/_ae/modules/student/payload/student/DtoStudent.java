@@ -1,23 +1,19 @@
-package com.lms._ae.modules.student.entities;
+package com.lms._ae.modules.student.payload.student;
 
-import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
-@Entity
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
-@Table(name = "students")
-public class Student {
+public class DtoStudent {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String firstName;
     private String lastName;
-
     private String studentDoB;
 
     private Boolean gender;
@@ -28,10 +24,4 @@ public class Student {
     private String status;
     private LocalDate admissionDate;
     private String nationality;
-
-    private String createdBy;
-    private String updatedBy;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
-
 }
