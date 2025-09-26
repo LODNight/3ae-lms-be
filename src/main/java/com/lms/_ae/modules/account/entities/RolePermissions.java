@@ -6,7 +6,7 @@ import lombok.Data;
 @Entity
 @Table(name = "role_permissions")
 @Data
-public class RolePermission {
+public class RolePermissions {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;

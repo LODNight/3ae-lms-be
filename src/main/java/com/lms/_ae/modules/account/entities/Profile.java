@@ -22,13 +22,13 @@ public class Profile {
 
     private String last_name;
 
-    private String email;
-
-    private String phone;
+    private LocalDateTime dob;
 
     private String gender;
 
-    private String status;
+    private String avatarUrl;
+
+    private String address;
 
     private String createdBy;
 
