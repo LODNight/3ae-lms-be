@@ -36,8 +36,4 @@ public class Profile {
 
     private LocalDateTime createdAt;
 
-    private LocalDateTime updatedAt;
-
-    @OneToMany(mappedBy = "profile", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Account> accounts;
-}
+    private LocalDateTime updatedAt;}

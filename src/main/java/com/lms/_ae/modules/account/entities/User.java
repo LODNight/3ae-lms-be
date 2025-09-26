@@ -1,6 +1,7 @@
 package com.lms._ae.modules.account.entities;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -16,9 +17,15 @@ public class User {
     private Integer id;
 
     @Column(name = "name")
-    private String name;
+    private String username;
 
     private String email;
+
+    private String password;
+
+    private String phone;
+
+    private String status;
 
     private String createdBy;
 
