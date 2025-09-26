@@ -1,4 +1,4 @@
-package com.lms._ae.modules.student.repository;
+package com.lms._ae.modules.student.repositories;
 
 import com.lms._ae.modules.student.entities.Guardian;
 import org.springframework.data.jpa.repository.JpaRepository;

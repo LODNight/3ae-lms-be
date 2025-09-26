@@ -1,4 +1,4 @@
-package com.lms._ae.modules.student.Exception;
+package com.lms._ae.Exception;
 
 public class APIException extends RuntimeException{
     public APIException(String message) {

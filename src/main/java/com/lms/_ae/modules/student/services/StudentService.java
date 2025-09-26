@@ -1,4 +1,4 @@
-package com.lms._ae.modules.student.service;
+package com.lms._ae.modules.student.services;
 
 import com.lms._ae.modules.student.payload.student.DtoRequestStudent;
 import com.lms._ae.modules.student.payload.student.DtoStudent;

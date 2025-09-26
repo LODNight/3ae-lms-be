@@ -1,10 +1,10 @@
-package com.lms._ae.modules.student.controller;
+package com.lms._ae.modules.student.controllers;
 
 import com.lms._ae.config.AppConstant;
 import com.lms._ae.modules.student.payload.student.DtoRequestStudent;
 import com.lms._ae.modules.student.payload.student.DtoStudent;
 import com.lms._ae.modules.student.payload.student.ResponseStudent;
-import com.lms._ae.modules.student.service.StudentService;
+import com.lms._ae.modules.student.services.StudentService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;

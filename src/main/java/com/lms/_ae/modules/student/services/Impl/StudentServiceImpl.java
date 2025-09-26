@@ -1,13 +1,13 @@
-package com.lms._ae.modules.student.service.Impl;
+package com.lms._ae.modules.student.services.Impl;
 
-import com.lms._ae.modules.student.Exception.ResourceNotFoundException;
+import com.lms._ae.Exception.ResourceNotFoundException;
 import com.lms._ae.modules.student.entities.Student;
 import com.lms._ae.modules.student.mapper.StudentMapper;
 import com.lms._ae.modules.student.payload.student.DtoRequestStudent;
 import com.lms._ae.modules.student.payload.student.DtoStudent;
 import com.lms._ae.modules.student.payload.student.ResponseStudent;
-import com.lms._ae.modules.student.repository.StudentRepository;
-import com.lms._ae.modules.student.service.StudentService;
+import com.lms._ae.modules.student.repositories.StudentRepository;
+import com.lms._ae.modules.student.services.StudentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

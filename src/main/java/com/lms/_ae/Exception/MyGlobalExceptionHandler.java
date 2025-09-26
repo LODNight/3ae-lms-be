@@ -1,4 +1,4 @@
-package com.lms._ae.modules.student.Exception;
+package com.lms._ae.Exception;
 
 import com.lms._ae.modules.student.payload.APIResponse;
 import org.springframework.http.HttpStatus;
