@@ -1,6 +1,6 @@
 package com.lms._ae.modules.student.controller;
 
-import com.lms._ae.modules.student.Config.AppConstant;
+import com.lms._ae.config.AppConstant;
 import com.lms._ae.modules.student.payload.student.DtoRequestStudent;
 import com.lms._ae.modules.student.payload.student.DtoStudent;
 import com.lms._ae.modules.student.payload.student.ResponseStudent;
